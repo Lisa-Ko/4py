@@ -1,0 +1,8 @@
+n = int(input('Введите количество элементов первого множества: '))
+m = int(input('Введите количество элементов второго множества: '))
+set_n=set( int(input(f'Введите {i+1} элемент первого множества: ')) for i in range (n))
+set_m=set( int(input(f'Введите {i+1} элемент второго множества: ')) for i in range (m))
+set_s=sorted(set_n.intersection(set_m))
+print(set_n)
+print(set_m)
+print(set_s)
